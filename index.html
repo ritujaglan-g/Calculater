@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="calculater">Calculater</h1>
+    <input type="number" id="file.1" />
+    <input type="number" id="file.2" />
+    <button onclick="project()">subtract</button>
+
+    <div id="result"></div>
+
+    <script>
+      function project() {
+        var x = document.getElementById("file.1").value;
+        var y = document.getElementById("file.2").value;
+        var x = Number(x);
+        var y = Number(y);
+        console.log(x - y);
+        document.getElementById("calculater").style.color = "red";
+        document.getElementById("calculater").innerHTML = "Subtraction";
+        document.getElementById("result").innerHTML = x - y;
+      }
+    </script>
+  </body>
+</html>
